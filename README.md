@@ -6,7 +6,7 @@ A GitHub Actions workflow automatically publishes new random numbers on a daily 
 
 This setup guarantees fair results that cannot be tampered with, enabling people to host a Tibia lottery without anyone being able to fake or rig the results.
 
-The commit that checked in the relevant scripts is [`420069a6555ed1435ffdbdce27c37c38b7464d3f`](https://github.com/tibiamaps/lottery/commit/420069a6555ed1435ffdbdce27c37c38b7464d3f). (Note the easy to remember `420069` prefix.) If any of the scripts are ever modified, that would observably alter the commit hash.
+The commit that checked in the relevant scripts is [`420069a6555ed1435ffdbdce27c37c38b7464d3f`](https://github.com/tibiamaps/lottery/commit/420069a6555ed1435ffdbdce27c37c38b7464d3f). (Note the easy-to-remember `420069` prefix.) There was one subsequent change to the GitHub Actions workflow — removing the ability to trigger it manually — in [commit `069420d66446b5e6cf5948667df7e4a8f84e348c`](https://github.com/tibiamaps/lottery/commit/069420d66446b5e6cf5948667df7e4a8f84e348c). (Again, note the easy-to-remember `069420` prefix.) If any of the scripts are ever modified further, that would observably alter the commit hash.
 
 ## How to host a lottery
 
