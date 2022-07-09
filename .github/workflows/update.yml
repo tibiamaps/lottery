@@ -1,0 +1,26 @@
+name: update
+
+on:
+  schedule:
+    # Run daily at 04:20 UTC.
+    - cron: '20 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+      - name: Update
+        run: |
+          ./update.sh
+          git config user.name 'TibiaMaps.io lottery bot'
+          git config user.email 'lottery@tibiamaps.io'
+          date=$(date +'%Y-%m-%d')
+          git add data
+          git commit data -m "Add random numbers for date=${date}" || true
+          git push
