@@ -10,6 +10,6 @@ The commit that checked in the relevant scripts is [`420069a6555ed1435ffdbdce27c
 
 ## How to host a lottery
 
-1. First, decide how many tickets you want to sell. This determines which file in the `data` folder to use. For example, to host a lottery with 50 tickets, you’d use `data/from-01-to-50.txt` (which includes random numbers from 1 to 50, inclusive).
+1. First, decide how many tickets you want to sell. This determines which file in the `data` folder to use. For example, to host a lottery with 50 tickets, you’d use [`data/from-01-to-50.txt`](https://github.com/tibiamaps/lottery/blob/main/data/from-01-to-50.txt) (which contains random numbers from 1 to 50, inclusive).
 1. Pick a future date, e.g. `2042-12-25`, and publicly announce this as the day you’ll draw the lottery winner.
 1. On that date, check the file in this repository. Once the script has finished running for that day, the file contains a line matching the date you chose plus a random number. That random number is the winner!
