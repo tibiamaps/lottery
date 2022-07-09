@@ -4,7 +4,6 @@ on:
   schedule:
     # Run daily at 04:20 UTC.
     - cron: '20 4 * * *'
-  workflow_dispatch:
 
 jobs:
   update:
