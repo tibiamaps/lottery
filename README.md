@@ -2,7 +2,7 @@
 
 This repository contains [a script that generates cryptographically strong random numbers](https://github.com/tibiamaps/lottery/blob/main/rng.py).
 
-[A GitHub Actions workflow](https://github.com/tibiamaps/lottery/blob/main/.github/workflows/update.yml) automatically publishes new random numbers on a daily basis (at 04:20 UTC). Since this script runs in the cloud and not on anyone’s local machine, **it’s impossible to fake or rig the results without leaving a trace**. To rig a lottery by producing unfair results, someone would have to edit the scripts in this repository and check in the changes, which would be visible in the Git history.
+[A GitHub Actions workflow](https://github.com/tibiamaps/lottery/blob/main/.github/workflows/update.yml) automatically publishes new random numbers on a daily basis (at 04:20 UTC). Since this script runs in the cloud and not on anyone’s local machine, **it’s impossible to fake or rig the results without leaving a trace**. To rig a lottery by producing unfair results, someone would have to edit the scripts in this repository and check in the changes, which would be visible in the Git history or [the GitHub Actions logs](https://github.com/tibiamaps/lottery/actions/workflows/update.yml).
 
 This setup guarantees fair results that cannot be tampered with, enabling people to host a Tibia lottery without anyone being able to fake or rig the results.
 
